@@ -1,0 +1,30 @@
+@()
+
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/defaulltStylesheet.css")">
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/SlotMachineTS.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/Statistics.js")" type="text/javascript"></script>
+        <title>Game Statistics</title>
+
+    </head>
+    <body>
+        <h1>Game Statistics</h1>
+        <div class="statCont">
+            <h1 class="statCls">Total : </h1> <h1 id="total" class="statCls">0</h1>
+            <h1 class="statCls">Total Wins : </h1><h1 id="wins" class="statCls">0</h1>
+            <h1 class="statCls">Total Losses :</h1><h1 id="losses" class="statCls">0</h1>
+            <h1 class="statCls">Avg. Wins :</h1><h1 id="avg" class="statCls">0</h1>
+        </div>
+
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+        <div class="save">
+            <button id="saveBtn"> Save </button>
+        </div>
+
+    </body>
+</html>
